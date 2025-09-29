@@ -1,0 +1,70 @@
+/* Reset básico e configurações de fonte */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2c3e50; /* Cor de fundo escura */
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1; /* Cor do texto claro */
+}
+
+/* Container principal do jogo */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: #f1c40f; /* Amarelo */
+}
+
+/* O Canvas (tabuleiro) */
+#gameCanvas {
+    border: 5px solid #2ecc71; /* Borda verde */
+    background-color: #1a2430; /* Fundo do tabuleiro */
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Placar de Pontuação */
+.score-board {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#score {
+    color: #e74c3c; /* Vermelho para a pontuação */
+}
+
+/* Botão de Início */
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Azul */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #2980b9;
+}
+
+#startButton:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+}
